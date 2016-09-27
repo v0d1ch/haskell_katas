@@ -9,7 +9,8 @@ main = hspec $ do
             pending
             ['a'..'z'] `shouldBe` "abcdefg"
             [1..5] `shouldBe` [1,2,3]
-            (enumFrom 10) `shouldBe` [10,11,12,13,14]
+            (enumFromTo 10 100) `shouldBe` [10,11,12,13,14]
+            take 3 (enumFrom 10) `shouldBe` [10,11,12,13,14]
         it "can drop elements from a list" $ do
             pending
             [1..10] `shouldBe` [6,7,8,9,10]
