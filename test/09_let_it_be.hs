@@ -24,7 +24,7 @@ main = hspec $ do
             {- cylinder' 1 2 `shouldBe` 18.84955592153876 -}
         it "is an expression in itself" $ do
             pending
-            {- let result = [let square x = x * x in (square 5,square 3,square 2)] -}
+            {- let result = [... in (square 5,square 3,square 2)] -}
             {- result `shouldBe` [(25,9,4)] -}
         it "can be used in list comprehensions" $ do
             pending
