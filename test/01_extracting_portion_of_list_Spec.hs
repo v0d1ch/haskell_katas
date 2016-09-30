@@ -5,6 +5,18 @@ import Control.Exception (evaluate)
 main :: IO ()
 main = hspec $ do
     describe "Extracting portion of list" $ do
+        it "finds the first element in a list" $ do
+            pending
+            {- [1,2,3,4,5] `shouldBe` 1 -}
+        it "finds the tail part of a list" $ do
+            pending
+            [1,2,3,4,5] `shouldBe` [2,3,4,5]
+        it "finds the last element in a list" $ do
+            pending
+            {- [1,2,3,4,5] `shouldBe` 5 -}
+        it "extracts the elements except the last one from a list" $ do
+            pending
+            [1,2,3,4,5] `shouldBe` [1,2,3,4]
         it "takes elements from a list" $ do
             pending
             ['a'..'z'] `shouldBe` "abcdefg"
