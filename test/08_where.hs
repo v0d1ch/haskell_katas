@@ -3,6 +3,7 @@ import Test.QuickCheck
 import Control.Exception (evaluate)
 
 {- BMI boundaries are 18.5, 25.0 and 30.0 -}
+{- Calculation logic: weight / height ^ 2 -}
 {- bmiTell weight height -}
     {- | bmi <= skinny = "You're underweight, you emo, you!" -}
     {- | bmi <= normal = "You're supposedly normal." -}
