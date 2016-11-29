@@ -9,7 +9,8 @@ main = hspec $ do
             pending
             {- use function composition-}
             {- take the abs value of items and negate them -}
-                {- `shouldBe` [-1,-2,-3,-4,-5] -}
+            [1,2,-3,4,5]
+                `shouldBe` [-1,-2,-3,-4,-5]
         it "can compose a new function from 3 other functions" $ do
             pending
             {- negate sum and get the last element -}
