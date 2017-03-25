@@ -14,7 +14,7 @@ main = hspec $ do
     describe "More List functions" $ do
         it "can iterate as an infinite list" $ do
             pending
-            {- (___ 10 $ ___ (*2) 1) `shouldBe` [1,2,4,8,16,32,64,128,256, 512] -}
+            {- (___ 10 $ ___ (*2) 1) `shouldBe` [1,2,4,8,16,32,64,128,256,512] -}
             {- (___ 3 $ ___ (++ "haha") "haha") -}
                 {- `shouldBe` ["haha", "hahahaha", "hahahahahaha"] -}
         it "can split a list at the position specified" $ do
