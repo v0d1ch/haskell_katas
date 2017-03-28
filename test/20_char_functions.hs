@@ -35,4 +35,5 @@ main = hspec $ do
             {- ___ 97 `shouldBe` 'a' -}
         it "can encode a string by shifting its value with provided num" $ do
             pending
+            {- encode 3 "Heey" `shouldBe` "Khh|" -}
             {- (decode 3 $ encode 3 "Heeeeey") `shouldBe` "Heeeeey" -}
