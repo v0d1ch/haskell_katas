@@ -19,6 +19,10 @@ main = hspec $ do
         it "can convert a list to map with Map.fromList" $ do
             pending
             {- ____  ___ `shouldBe` 6 -}
+        it "can lookup a value by a key" $ do
+            pending
+            {- (___ $ ___ phoneBook) `shouldBe` Just "853-2492" -}
+            {- (___ "penny1" $ ___ phoneBook) `shouldBe` Nothing -}
         it "returns 0 for size of empty map" $ do
             pending
             {- ___ Map.empty `shouldBe` 0 -}
