@@ -2,7 +2,18 @@ import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
 
-{- Create a Person record that has the correct fields -}
+{- Create a Person record, find the fields in the specs -}
+
+{- Implement the introduce function -}
+{- introduce :: Person -> String -}
+
+{-
+  Create the factory function - makePerson
+  Use the following fields:
+  "John" "Smith" 28 5.2 "332-748-9291"
+-}
+{- makePerson :: Person -}
+
 
 main :: IO()
 main = hspec $ do
@@ -13,11 +24,8 @@ main = hspec $ do
             {- lastName person `shouldBe` "Boo" -}
         it "fields do not have to be in order when used with field names" $ do
             pending
-            {- let person = Person { firstName = "John" -}
-                                {- , lastName = "Smith" -}
-                                {- , height = 5.2 -}
-                                {- , age = 28 -}
-                                {- , phoneNumber = "332-748-9291" -}
-                                {- , flavor = "salty" } -}
-            {- firstName person `shouldBe` "John" -}
-            {- age person `shouldBe` 28 -}
+            {- firstName makePerson `shouldBe` "John" -}
+            {- age makePerson `shouldBe` 28 -}
+        it "can introduce a Person with destructuring" $ do
+            pending
+            {- introduce makePerson `shouldBe` "Hello, John Smith!" -}
