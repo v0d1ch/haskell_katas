@@ -2,19 +2,17 @@ import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
 
-removeNonUppercase :: [Char] -> [Char]
-removeNonUppercase st = "A"
+{- Create the `removeNonUppercase` function with proper type -}
 
-addThree :: Int -> Int -> Int -> Int
-addThree x y z = x
+{- Create the addThree function with proper type info -}
 
 main :: IO ()
 main = hspec $ do
     describe "Functions have types" $ do
         it "can use a function with type" $ do
             pending
-            removeNonUppercase "HelloWORLD" `shouldBe` "HWORLD"
-            addThree 1 2 3 `shouldBe` 6
+            {- removeNonUppercase "HelloWORLD" `shouldBe` "HWORLD" -}
+            {- addThree 1 2 3 `shouldBe` 6 -}
     describe "Type classes" $ do
         it "can order strings" $ do
             pending
