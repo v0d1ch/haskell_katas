@@ -2,11 +2,20 @@ import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
 
+{- head' :: [a] -> a -}
+{- head' xs = case xs of ... -}
+
+{- describeList :: [a] -> String -}
+{- describeList xs = "The list is " ++ case xs ___ -}
+                                            {- ___ -}
+                                            {- ___ -}
+
 {- Case statement can be written with patten matching -}
 {- describeList xs = "The list is " ++ what xs -}
-    {- where what [] = "empty." -}
-          {- what [x] = "a singleton list." -}
-          {- what xs = "a longer list." -}
+    {- where ___ [] = "is empty." -}
+          {- ___ -}
+          {- ___ -}
+
 
 main :: IO()
 main = hspec $ do
