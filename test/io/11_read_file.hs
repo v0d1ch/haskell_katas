@@ -1,5 +1,5 @@
 {-
-    Reads a file and points out its content
+    Reads a file and prints out its content
     Use the file test/io/girlfriend.txt
 -}
 import System.IO
