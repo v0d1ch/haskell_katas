@@ -9,7 +9,7 @@ main = hspec $ do
     describe "Dealing with Modules" $ do
         it "can pick up and use the nub function from Data.List" $ do
             pending
-            {- find the number of unique elements in a list -}
+            {- find the number of unique (`nub`) elements in a list -}
             (length [1,1,2,3,4,4]) `shouldBe` 4
         it "inserts an item in between the list" $ do
             pending
