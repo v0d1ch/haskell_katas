@@ -2,7 +2,7 @@
     Generate 10 random characters,
     which are the same random number every time we call it,
     as it's using a static generator
-    randomR ('a','z') (mkStdGen Int) :: String - will generate random chars
+    randomRs ('a','z') (mkStdGen Int) :: String - will generate random chars
  -}
 import System.Random
 
