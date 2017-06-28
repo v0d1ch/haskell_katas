@@ -32,8 +32,9 @@ main = hspec $ do
             pending
             {- Circle 10 20 5 `shouldBe` Circle 10.0 20.0 5.0 -}
         it "can use Value constructors as functions" $ do
+            -- Use map function here
             pending
-            {- map (Circle 10 20) [4,5] -}
+            {- ___ ___ [4,5] -}
                 {- `shouldBe` [Circle 10.0 20.0 4.0, Circle 10.0 20.0 5.0] -}
         it "can calculate surface for two types with Points" $ do
             pending
