@@ -1,5 +1,5 @@
 {-
-    withFile' :: FilePath -> (Handle -> IO a) -> IO a
+    withFile' :: FilePath -> IOMode -> (Handle -> IO a) -> IO a
 -}
 import System.IO
 
